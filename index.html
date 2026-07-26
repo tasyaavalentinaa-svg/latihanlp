@@ -1,88 +1,73 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depresso Cafe - Tempat Nongkrong & WFC Nyaman</title>
+    <title>La Tasya Bakehouse - Tempat Nongkrong Asik & Estetik di Cilegon</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'depresso-green': '#1f3a2b',
-                        'depresso-green-dark': '#14271c',
-                        'depresso-green-light': '#2c523d',
-                        'depresso-cream': '#f5f2e9',
-                        'depresso-cream-dark': '#eae4d3',
-                        'depresso-accent': '#2e5b43',
-                        'depresso-text': '#2a332d',
-                        'depresso-gold': '#c59d40'
+                        brand: {
+                            maroon: '#701C2C',
+                            maroonDark: '#50121F',
+                            maroonLight: '#8C293E',
+                            creamBg: '#FAF5EE',
+                            creamCard: '#F4ECE1',
+                            creamLight: '#FFFDF9',
+                            gold: '#C59B63',
+                            darkText: '#2C1B17',
+                            softText: '#66534E'
+                        }
                     },
                     fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                        handwriting: ['Caveat', 'cursive']
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        script: ['"Caveat"', 'cursive']
                     }
                 }
             }
         }
     </script>
 
-    <style>
-        body {
-            background-color: #f5f2e9;
-            color: #2a332d;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            overflow-x: hidden;
-        }
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        .handwritten {
+    <!-- Custom CSS for specific aesthetic touches -->
+    <style>
+        .font-script {
             font-family: 'Caveat', cursive;
         }
-
-        /* Polaroid Effect */
-        .polaroid-card {
-            background: #ffffff;
-            padding: 12px 12px 36px 12px;
-            box-shadow: 0 10px 25px -5px rgba(31, 58, 43, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .hero-bg-pattern {
+            background-color: #FAF5EE;
+            background-image: radial-gradient(#701C2C 0.4px, transparent 0.4px), radial-gradient(#701C2C 0.4px, #FAF5EE 0.4px);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+            background-opacity: 0.03;
         }
-
-        .polaroid-card:hover {
-            transform: translateY(-6px) rotate(0.5deg);
-            box-shadow: 0 20px 30px -10px rgba(31, 58, 43, 0.25);
+        .badge-rotate {
+            transform: rotate(-6deg);
         }
-
-        /* Custom Leaf Vector Accent */
-        .bg-leaf-pattern {
-            background-image: radial-gradient(#1f3a2b 0.75px, transparent 0.75px), radial-gradient(#1f3a2b 0.75px, #f5f2e9 0.75px);
-            background-size: 30px 30px;
-            background-position: 0 0, 15px 15px;
-            opacity: 0.04;
+        .badge-rotate-right {
+            transform: rotate(5deg);
         }
-
-        .green-badge {
-            background-color: #1f3a2b;
-            color: #ffffff;
-            display: inline-block;
-            padding: 6px 18px;
-            border-radius: 9999px;
-            font-weight: 700;
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        /* Glassmorphism effects */
+        .glass-card {
+            background: rgba(255, 253, 249, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(112, 28, 44, 0.08);
         }
     </style>
 
@@ -96,207 +81,160 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '981234094922310');
+    fbq('init', '2333786000488648');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=981234094922310&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=2333786000488648&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
+<body class="bg-brand-creamBg text-brand-darkText font-sans antialiased selection:bg-brand-maroon selection:text-white">
 
-<body class="relative">
+    <!-- Top Bar -->
+    <div class="bg-brand-maroon text-white text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide">
+        ✨ Freshly Baked Daily • Menu Mulai dari Rp 20.000 • Kunjungi Outlet Cilegon, Banten!
+    </div>
 
-    <nav
-        class="sticky top-0 z-40 bg-[#f5f2e9]/95 backdrop-blur-md border-b border-[#eae4d3] shadow-sm transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
-                <a href="#" class="flex flex-col items-start group">
-                    <div class="flex items-center gap-2">
-                        <!-- DEPRESSO SVG Logo from reference -->
-                        <svg class="h-9 w-auto" viewBox="0 0 320 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- D shape -->
-                            <path d="M15 10H45C68 10 82 23 82 35C82 47 68 60 45 60H15V10Z" fill="#1f3a2b" />
-                            <!-- Inner cutout cup -->
-                            <path d="M30 24H52C52 24 53 43 41 43C29 43 30 24 30 24Z" fill="#f5f2e9" />
-                            <path d="M22 28C18 28 16 31 16 34C16 38 19 40 24 40" stroke="#c59d40" stroke-width="4"
-                                stroke-linecap="round" fill="none" />
-                            <!-- Coffee Bean in Cup -->
-                            <ellipse cx="41" cy="33" rx="5" ry="7" transform="rotate(-20 41 33)" fill="#1f3a2b" />
-                            <path d="M39 27Q42 33 41 39" stroke="#f5f2e9" stroke-width="1.5" stroke-linecap="round" />
-                            <!-- Steam -->
-                            <path d="M36 17Q38 14 36 11" stroke="#c59d40" stroke-width="2" stroke-linecap="round" />
-                            <path d="M42 17Q44 14 42 11" stroke="#c59d40" stroke-width="2" stroke-linecap="round" />
-                            <path d="M48 17Q50 14 48 11" stroke="#c59d40" stroke-width="2" stroke-linecap="round" />
-                            <!-- EPRESSO -->
-                            <text x="92" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800"
-                                font-size="42" fill="#1f3a2b" letter-spacing="3">EPRESSO</text>
-                        </svg>
-                    </div>
-                    <span class="text-xs font-semibold text-depresso-green flex items-center gap-1 mt-0.5 ml-1 hover:underline">
-                        <i class="fa-brands fa-instagram text-xs"></i> @dep’s.cafe
-                    </span>
-                </a>
-
-                <!-- Desktop Nav -->
-                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-depresso-text">
-                    <a href="#suasana" class="hover:text-depresso-accent transition-colors">Suasana</a>
-                    <a href="#menu" class="hover:text-depresso-accent transition-colors">Menu Lengkap</a>
-                    <a href="#keunggulan" class="hover:text-depresso-accent transition-colors">Keunggulan</a>
-                    <a href="#fasilitas" class="hover:text-depresso-accent transition-colors">Fasilitas</a>
-                </div>
-
-                <!-- CTA Button Header -->
-                <div class="hidden sm:flex items-center gap-3">
-                    <button onclick="openMenuModal()" class="px-5 py-2.5 rounded-full border-2 border-depresso-green text-depresso-green font-bold text-sm hover:bg-depresso-green hover:text-white transition-all">
-                        <i class="fa-solid fa-utensils mr-2"></i> Menu
-                    </button>
-                    <a href="https://wa.me/+6289616333201?text=Halo+Saya+Tertarik+Untuk+Reservasi" target="_blank" onclick="fbq('track', 'Lead');"
-                        class="px-5 py-2.5 rounded-full bg-depresso-green text-white font-bold text-sm hover:bg-depresso-green-light shadow-md hover:shadow-lg transition-all flex items-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Reservasi Meja
-                    </a>
-                </div>
-
-                <!-- Mobile menu toggle -->
-                <button onclick="toggleMobileNav()" class="md:hidden p-2 rounded-lg text-depresso-green focus:outline-none" aria-label="Toggle Navigation Menu">
-                    <i class="fa-solid fa-bars text-2xl" id="nav-toggle-icon"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Nav Menu -->
-        <div id="mobile-menu"
-            class="hidden md:hidden bg-depresso-cream-dark px-6 py-6 border-b border-depresso-green/20 space-y-4">
-            <div class="pb-2 border-b border-depresso-green/10">
-                <span class="text-xs font-semibold text-depresso-green flex items-center gap-1">
-                    <i class="fa-brands fa-instagram"></i> @dep’s.cafe
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-brand-creamBg/90 backdrop-blur-md border-b border-brand-maroon/10 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex flex-col items-start group">
+                <span class="font-serif text-2xl sm:text-3xl font-extrabold tracking-widest text-brand-maroon leading-none">
+                    LÀ TASYA
                 </span>
+                <span class="text-[10px] sm:text-xs tracking-[0.3em] font-semibold text-brand-maroon/80 uppercase mt-0.5">
+                    BAKEHOUSE
+                </span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-brand-darkText">
+                <a href="#hero" class="hover:text-brand-maroon transition-colors">Beranda</a>
+                <a href="#keunggulan" class="hover:text-brand-maroon transition-colors">Tentang Kami</a>
+                <a href="#menu" class="hover:text-brand-maroon transition-colors">Menu Favorit</a>
+                <a href="#testimoni" class="hover:text-brand-maroon transition-colors">Testimoni</a>
+                <a href="#lokasi" class="hover:text-brand-maroon transition-colors">Lokasi</a>
             </div>
-            <a href="#suasana" onclick="toggleMobileNav()"
-                class="block font-medium text-depresso-text hover:text-depresso-green">Suasana Nyaman</a>
-            <a href="#menu" onclick="toggleMobileNav()"
-                class="block font-medium text-depresso-text hover:text-depresso-green">Pilihan Menu</a>
-            <a href="#keunggulan" onclick="toggleMobileNav()"
-                class="block font-medium text-depresso-text hover:text-depresso-green">Keunggulan Kami</a>
-            <a href="#fasilitas" onclick="toggleMobileNav()"
-                class="block font-medium text-depresso-text hover:text-depresso-green">Fasilitas</a>
-            <div class="pt-4 border-t border-depresso-green/20 flex flex-col gap-3">
-                <button onclick="openMenuModal(); toggleMobileNav();" class="w-full text-center py-2.5 rounded-full border border-depresso-green text-depresso-green font-bold">
-                    Lihat Buku Menu
-                </button>
-                <a href="https://wa.me/+6289616333201?text=Halo+Saya+Tertarik+Untuk+Reservasi" target="_blank" onclick="fbq('track', 'Lead');"
-                    class="w-full text-center py-2.5 rounded-full bg-depresso-green text-white font-bold flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i> Reservasi WhatsApp
+
+            <!-- CTA Header Button -->
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/6281297250634?text=Halo" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Lead');"
+                   class="inline-flex items-center space-x-2 bg-brand-maroon hover:bg-brand-maroonDark text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                    <i class="fa-brands font-bold text-lg"></i>
+                    <span>Pesan via WA</span>
                 </a>
             </div>
         </div>
     </nav>
 
-    <section class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden">
-        <div class="absolute inset-0 bg-leaf-pattern pointer-events-none"></div>
-
-        <!-- Decorative Botanical Leaves SVG Left & Right -->
-        <div class="absolute top-10 -left-12 opacity-20 pointer-events-none hidden lg:block">
-            <svg width="220" height="280" viewBox="0 0 100 100" fill="#1f3a2b">
-                <path d="M50 0 C20 30 10 70 50 100 C90 70 80 30 50 0 Z" />
-            </svg>
-        </div>
-        <div class="absolute bottom-4 -right-12 opacity-20 pointer-events-none hidden lg:block transform rotate-45">
-            <svg width="240" height="300" viewBox="0 0 100 100" fill="#1f3a2b">
-                <path d="M50 0 C20 30 10 70 50 100 C90 70 80 30 50 0 Z" />
-            </svg>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Hero Section (ATTENTION) -->
+    <section id="hero" class="relative overflow-hidden pt-8 pb-16 lg:py-20 hero-bg-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-                <!-- Left Hero Text Content -->
-                <div class="lg:col-span-7 space-y-6 text-left">
-                    <div class="inline-flex items-center gap-2">
-                        <span class="handwritten text-3xl md:text-4xl text-depresso-green font-semibold">Halo!</span>
-                        <span class="text-xl">🤍</span>
+                
+                <!-- Hero Left Copywriting -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-brand-creamCard px-4 py-1.5 rounded-full border border-brand-maroon/15 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span class="text-xs sm:text-sm font-semibold text-brand-maroon">Spot Estetik #1 di Cilegon</span>
                     </div>
 
-                    <h1
-                        class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-bold text-depresso-green leading-tight">
-                        Cari Tempat Hangout dengan Pilihan Menu Lengkap?
+                    <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-brand-maroon leading-tight tracking-tight">
+                        Tempat Nongkrong Asik & Estetik <span class="block mt-2 italic font-serif text-brand-maroonLight font-normal">Tanpa Bikin Kantong Bolong!</span>
                     </h1>
 
-                    <div class="border-l-4 border-depresso-green pl-4 py-1">
-                        <p class="handwritten text-2xl md:text-3xl text-depresso-accent font-semibold">
-                            Selamat Datang di Depresso Cafe!
-                        </p>
+                    <!-- Script Decor Highlight -->
+                    <div class="font-script text-2xl sm:text-3xl text-brand-maroon font-bold -mt-2">
+                        dari salt bread sampai cakes, semua ada disini! ♡
                     </div>
 
-                    <p class="text-base sm:text-lg text-depresso-text/90 leading-relaxed font-normal max-w-2xl">
-                        Dari racikan kopi segar, makanan berat lezat, hingga dessert—semua ada untuk menemani waktu santaimu.
+                    <p class="text-base sm:text-lg text-brand-softText max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Nikmati kelezatan varian <span class="font-semibold text-brand-darkText">freshly baked bakery</span>, dessert manis, dan kopi kekinian di La Tasya Bakehouse. Tempat pas untuk tugas, rehat kantor, sampai arisan seru!
                     </p>
 
-                    <!-- Price Highlight -->
-                    <div class="flex items-center gap-3 pt-2">
-                        <span class="text-sm font-medium text-depresso-text">Suasana tenang, harga aman mulai</span>
-                        <div class="green-badge text-lg shadow-md hover:scale-105 transition-transform cursor-default">
-                            Rp20.000! 🍃
-                        </div>
+                    <!-- CTA Group -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/6281297250634?text=Halo" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Lead');"
+                           class="w-full sm:w-auto bg-brand-maroon hover:bg-brand-maroonDark text-white px-8 py-4 rounded-full font-bold text-base shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-center flex items-center justify-center space-x-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Pesan Lewat WhatsApp</span>
+                        </a>
+
+                        <a href="#menu" class="w-full sm:w-auto bg-brand-creamCard hover:bg-brand-maroon/10 text-brand-maroon border border-brand-maroon/30 px-7 py-4 rounded-full font-bold text-base transition-all duration-300 text-center flex items-center justify-center space-x-2">
+                            <span>Cek Menu Lengkap</span>
+                            <i class="fa-solid fa-arrow-down text-sm"></i>
+                        </a>
                     </div>
 
-                    <!-- Action Buttons -->
-                    <div class="pt-6 flex flex-wrap items-center gap-4">
-                        <button onclick="openMenuModal()" class="px-7 py-4 rounded-xl bg-depresso-green text-white font-bold text-sm tracking-wider uppercase hover:bg-depresso-green-light shadow-xl hover:shadow-2xl transition-all flex items-center gap-3 group">
-                            <span>LIHAT MENU LENGKAP</span>
-                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                        </button>
-
-                        <a href="#lokasi"
-                            class="px-7 py-4 rounded-xl border-2 border-depresso-green text-depresso-green font-bold text-sm tracking-wider uppercase hover:bg-depresso-cream-dark transition-all flex items-center gap-2">
-                            <span>TEMUKAN LOKASI KAMI</span>
-                            <i class="fa-solid fa-location-dot"></i>
-                        </a>
+                    <!-- Quick Info Badges -->
+                    <div class="pt-6 grid grid-cols-3 gap-2 sm:gap-4 border-t border-brand-maroon/10">
+                        <div class="text-center lg:text-left">
+                            <span class="block text-xl sm:text-2xl font-bold font-serif text-brand-maroon">100%</span>
+                            <span class="text-xs text-brand-softText">Fresh Daily Baked</span>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <span class="block text-xl sm:text-2xl font-bold font-serif text-brand-maroon">Rp 20k</span>
+                            <span class="text-xs text-brand-softText">Mulai Dari</span>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <span class="block text-xl sm:text-2xl font-bold font-serif text-brand-maroon">4.9★</span>
+                            <span class="text-xs text-brand-softText">Ulasan Pelanggan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Right Hero Imagery Showcase -->
+                <!-- Hero Right Visual Presentation (Matching Reference Poster Design) -->
                 <div class="lg:col-span-5 relative">
+                    <!-- Main Card Collage mimicking the poster -->
                     <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Floating Stamp Badge mimicking poster "Baked Fresh Made With Love" -->
+                        <div class="absolute -top-6 -right-2 z-20 bg-white border-2 border-brand-maroon text-brand-maroon rounded-full p-4 w-28 h-28 flex flex-col items-center justify-center text-center shadow-lg badge-rotate animate-bounce duration-1000">
+                            <i class="fa-solid fa-wheat-awn text-xl mb-0.5"></i>
+                            <span class="text-[9px] font-bold uppercase tracking-wider leading-tight">BAKED FRESH</span>
+                            <span class="text-[8px] font-script text-brand-maroonLight">with love ♡</span>
+                        </div>
 
-                        <!-- Main Card Showcase -->
-                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-                            <img src="Foto 1.jpeg" alt="Depresso Warm Interior" class="w-full h-[280px] sm:h-[340px] object-cover hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80';">
-                            <div class="p-5 bg-depresso-cream">
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        <h3 class="font-serif font-bold text-lg text-depresso-green">Depresso Warm
-                                            Interior</h3>
-                                        <p class="text-xs text-depresso-text/70">Cozy lighting & comfortable seating</p>
+                        <!-- Main Grid Collage -->
+                        <div class="bg-brand-creamCard p-4 rounded-3xl border-2 border-brand-maroon/20 shadow-2xl space-y-4">
+                            <!-- Image 1: Salt Bread & Croissant Showcase -->
+                            <div class="relative overflow-hidden rounded-2xl group shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1000&auto=format&fit=crop" 
+                                     alt="Salt Bread & Croissants La Tasya Bakehouse" 
+                                     class="w-full h-52 sm:h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-3 left-3 bg-brand-maroon/90 text-white text-xs px-3 py-1 rounded-full font-serif font-semibold backdrop-blur-sm">
+                                    🥐 Artisan Salt Bread & Pastry
+                                </div>
+                            </div>
+
+                            <!-- Bottom Grid Split (Cake & Cookies) -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="relative overflow-hidden rounded-2xl group shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800&auto=format&fit=crop" 
+                                         alt="Signature Strawberry Cake" 
+                                         class="w-full h-36 sm:h-44 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                    <div class="absolute bottom-2 left-2 bg-brand-creamBg/90 text-brand-maroon text-[10px] font-bold px-2 py-0.5 rounded-full">
+                                        🍰 Signature Cake
                                     </div>
-                                    <span class="text-xs font-semibold px-3 py-1 bg-depresso-green/10 text-depresso-green rounded-full">Open Daily</span>
+                                </div>
+                                <div class="relative overflow-hidden rounded-2xl group shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" 
+                                         alt="Artisan Coffee & Drinks" 
+                                         class="w-full h-36 sm:h-44 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                    <div class="absolute bottom-2 left-2 bg-brand-maroon/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                                        ☕ Artisan Coffee
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Floating Food Showcase Collage -->
-                        <div class="grid grid-cols-2 gap-3 mt-4">
-                            <!-- Coffee Item -->
-                            <div class="polaroid-card rounded-xl transform -rotate-2 hover:rotate-0">
-                                <img src="Foto 1.jpeg" alt="Racikan Kopi Pilihan" class="w-full h-28 object-cover rounded-md mb-2" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80';">
-                                <span class="block text-center font-serif text-xs font-bold text-depresso-green">Racikan Kopi Pilihan</span>
-                            </div>
-
-                            <!-- Dessert / Main Dish Item -->
-                            <div class="polaroid-card rounded-xl transform rotate-2 hover:rotate-0">
-                                <img src="Foto 1.jpeg" alt="Hidangan Spesial" class="w-full h-28 object-cover rounded-md mb-2" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80';">
-                                <span class="block text-center font-serif text-xs font-bold text-depresso-green">Hidangan Spesial</span>
-                            </div>
+                        <!-- Badge Overlay Banner mimicking "Untuk Setiap Momen Istimewamu" -->
+                        <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-brand-maroon text-white p-4 rounded-2xl shadow-xl max-w-[240px] border-2 border-white badge-rotate-right z-20">
+                            <p class="text-xs font-script text-amber-200">Untuk setiap momen istimewamu,</p>
+                            <p class="text-sm font-serif font-bold text-white leading-tight">La Tasya selalu siap manisnya! ♡</p>
                         </div>
-
-                        <!-- Cursive Tag Floating -->
-                        <div
-                            class="absolute -bottom-6 -left-4 bg-white px-5 py-3 rounded-2xl shadow-xl border border-depresso-green/20 hidden sm:block transform -rotate-3">
-                            <p class="handwritten text-xl text-depresso-green font-bold">"Tempat nyaman, cerita pun
-                                mengalir ♡"</p>
-                        </div>
-
                     </div>
                 </div>
 
@@ -304,825 +242,446 @@
         </div>
     </section>
 
-    <section id="suasana" class="py-16 md:py-24 bg-depresso-cream-dark/50 border-y border-depresso-green/10 relative">
+    <!-- Brand Value Pillars Section (Matching Poster Icons) -->
+    <section class="py-12 bg-white border-y border-brand-maroon/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="flex flex-col items-center text-center p-4 rounded-2xl bg-brand-creamBg/60 border border-brand-maroon/10 hover:shadow-md transition-all">
+                    <div class="w-14 h-14 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-2xl mb-3">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-brand-maroon text-base">Bahan Berkualitas</h3>
+                    <p class="text-xs text-brand-softText mt-1">Menggunakan mentega premium & bahan alami pilihan.</p>
+                </div>
 
+                <!-- Pillar 2 -->
+                <div class="flex flex-col items-center text-center p-4 rounded-2xl bg-brand-creamBg/60 border border-brand-maroon/10 hover:shadow-md transition-all">
+                    <div class="w-14 h-14 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-2xl mb-3">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-brand-maroon text-base">Dibuat Fresh Setiap Hari</h3>
+                    <p class="text-xs text-brand-softText mt-1">Dipanggang hangat setiap pagi untuk rasa terbaik.</p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="flex flex-col items-center text-center p-4 rounded-2xl bg-brand-creamBg/60 border border-brand-maroon/10 hover:shadow-md transition-all">
+                    <div class="w-14 h-14 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-2xl mb-3">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-brand-maroon text-base">Dibuat dengan Cinta</h3>
+                    <p class="text-xs text-brand-softText mt-1">Sentuhan resep artisan buatan tangan penuh kasih.</p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="flex flex-col items-center text-center p-4 rounded-2xl bg-brand-creamBg/60 border border-brand-maroon/10 hover:shadow-md transition-all">
+                    <div class="w-14 h-14 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-2xl mb-3">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-brand-maroon text-base">Varian Lengkap</h3>
+                    <p class="text-xs text-brand-softText mt-1">Pilihan beragam untuk memenuhi semua selera kamu.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interest Section (INTEREST) -->
+    <section id="keunggulan" class="py-16 sm:py-24 bg-brand-creamBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-                <div class="inline-flex items-center gap-2">
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-depresso-green">
-                        Suasana Nyaman untuk Setiap Momen Serumu
-                    </h2>
-                    <span class="text-2xl">🍃</span>
-                </div>
-                <p class="text-base sm:text-lg text-depresso-text/80 leading-relaxed">
-                    Setiap orang punya cara sendiri untuk menikmati harinya. Di Depresso Cafe, kami merancang suasana yang pas untuk segala kebutuhanmu:
-                </p>
-            </div>
-
-            <!-- Target Audience 3 Columns Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-
-                <!-- Card 1: Pelajar & Mahasiswa -->
-                <div
-                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-depresso-green/10 transition-all duration-300 flex flex-col items-start group">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-depresso-green text-white flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform shadow-md">
-                        <i class="fa-solid fa-book-open-reader"></i>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold text-depresso-green mb-3 uppercase tracking-wide">
-                        PELAJAR & MAHASISWA
-                    </h3>
-                    <p class="text-sm text-depresso-text/80 leading-relaxed">
-                        Area tenang dengan Wi-Fi kencang dan suasana yang tenang untuk nugas atau diskusi kelompok agar makin produktif.
-                    </p>
-                </div>
-
-                <!-- Card 2: Pekerja & Freelancer -->
-                <div
-                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-depresso-green/10 transition-all duration-300 flex flex-col items-start group">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-depresso-green text-white flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform shadow-md">
-                        <i class="fa-solid fa-laptop"></i>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold text-depresso-green mb-3 uppercase tracking-wide">
-                        PEKERJA & FREELANCER
-                    </h3>
-                    <p class="text-sm text-depresso-text/80 leading-relaxed">
-                        Suasana kondusif yang nyaman untuk Work From Cafe (WFC) atau meeting santai tanpa gangguan.
-                    </p>
-                </div>
-
-                <!-- Card 3: Ibu Rumah Tangga & Komunitas -->
-                <div
-                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-depresso-green/10 transition-all duration-300 flex flex-col items-start group">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-depresso-green text-white flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform shadow-md">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold text-depresso-green mb-3 uppercase tracking-wide">
-                        IBU RUMAH TANGGA & KOMUNITAS
-                    </h3>
-                    <p class="text-sm text-depresso-text/80 leading-relaxed">
-                        Sudut yang hangat dan estetik untuk arisan, gathering, atau sekadar me-time sejenak melepas penat.
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- Polaroid Photos Grid with Script Text -->
-            <div class="bg-white/80 rounded-3xl p-6 md:p-10 shadow-lg border border-depresso-green/10">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-
-                    <div class="polaroid-card rounded-xl transform -rotate-1">
-                        <img src="Foto 1.jpeg" alt="Depresso Warm Interior" class="w-full h-52 object-cover rounded-md mb-3" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80';">
-                        <p class="text-center font-serif text-sm font-semibold text-depresso-green">Sudut Warm &
-                            Minimalis</p>
-                    </div>
-
-                    <div class="polaroid-card rounded-xl transform rotate-2">
-                        <img src="Foto 1.jpeg" alt="Kopi & Pastry" class="w-full h-52 object-cover rounded-md mb-3" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80';">
-                        <p class="text-center font-serif text-sm font-semibold text-depresso-green">Racikan Kopi Pilihan
-                        </p>
-                    </div>
-
-                    <div class="polaroid-card rounded-xl transform -rotate-2">
-                        <img src="Foto 1.jpeg" alt="Hidangan Lezat" class="w-full h-52 object-cover rounded-md mb-3" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80';">
-                        <p class="text-center font-serif text-sm font-semibold text-depresso-green">Hidangan Lezat &
-                            Fresh</p>
-                    </div>
-
-                </div>
-
-                <!-- Handwriting Highlight Footer inside box -->
-                <div class="mt-8 text-right pr-4">
-                    <span class="handwritten text-3xl md:text-4xl text-depresso-green font-bold">
-                        Tempat nyaman, cerita pun mengalir ♡
-                    </span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="menu" class="py-16 md:py-24 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-            <!-- Section Title -->
-            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-                <h2
-                    class="font-serif text-3xl sm:text-4xl font-bold text-depresso-green flex items-center justify-center gap-2 flex-wrap">
-                    <span>Nikmati Beragam Variasi Menu Lengkap dari Pagi Sampai Malam</span>
-                    <i class="fa-solid fa-sparkles text-depresso-gold text-2xl"></i>
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-maroon bg-brand-creamCard px-4 py-1.5 rounded-full border border-brand-maroon/10">
+                    Solusi Hangout Nyaman & Terjangkau
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-maroon">
+                    Bikin Momen Kumpul Jadi Lebih Bermakna
                 </h2>
-                <p class="text-base sm:text-lg text-depresso-text/80">
-                    Dibuat segar setiap hari dengan bahan-bahan berkualitas terbaik untuk memanjakan lidah Anda.
+                <p class="text-base sm:text-lg text-brand-softText leading-relaxed">
+                    Sering bingung cari tempat <span class="italic font-semibold text-brand-darkText">hangout</span> yang nyaman, pilihan menunya banyak, tapi harganya tetap bersahabat?
+                </p>
+                <p class="text-sm sm:text-base text-brand-softText">
+                    Di <strong class="text-brand-maroon">La Tasya Bakehouse</strong>, kamu tak perlu kompromi antara rasa, suasana, dan dompet. Kami menghadirkan ruang hangat untuk kamu yang ingin:
                 </p>
             </div>
 
-            <!-- Main Content Layout Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-
-                <!-- Left 3 Menu Categories (8 Cols) -->
-                <div class="lg:col-span-7 space-y-6 flex flex-col justify-between">
-
-                    <!-- Specialty Coffee & Drinks -->
-                    <div
-                        class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-depresso-green/10 flex items-start gap-5 hover:border-depresso-green/40 transition-all">
-                        <div
-                            class="w-14 h-14 rounded-full bg-depresso-cream text-depresso-green flex items-center justify-center text-2xl shrink-0 shadow-inner">
-                            <i class="fa-solid fa-mug-saucer"></i>
-                        </div>
-                        <div class="space-y-2">
-                            <h3 class="font-serif text-xl font-bold text-depresso-green tracking-wide uppercase">
-                                SPECIALTY COFFEE & DRINKS
-                            </h3>
-                            <p class="text-sm text-depresso-text/80 leading-relaxed">
-                                Dari racikan kopi pilihan untuk penambah semangat hingga minuman segar non-kopi yang
-                                menyegarkan harimu.
-                            </p>
-                            <div class="pt-2 flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Espresso</span>
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Matcha Latte</span>
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Artisan Tea</span>
-                            </div>
-                        </div>
+            <!-- Target Audience Cards Grid -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Mahasiswa & Pelajar -->
+                <div class="bg-white rounded-3xl p-8 border border-brand-maroon/10 shadow-lg hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-maroon group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-graduation-cap"></i>
                     </div>
-
-                    <!-- Hearty Main Courses -->
-                    <div
-                        class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-depresso-green/10 flex items-start gap-5 hover:border-depresso-green/40 transition-all">
-                        <div
-                            class="w-14 h-14 rounded-full bg-depresso-cream text-depresso-green flex items-center justify-center text-2xl shrink-0 shadow-inner">
-                            <i class="fa-solid fa-utensils"></i>
-                        </div>
-                        <div class="space-y-2">
-                            <h3 class="font-serif text-xl font-bold text-depresso-green tracking-wide uppercase">
-                                HEARTY MAIN COURSES
-                            </h3>
-                            <p class="text-sm text-depresso-text/80 leading-relaxed">
-                                Pilihan makanan berat yang lezat dan mengenyangkan untuk makan siang maupun makan malam
-                                bersama teman.
-                            </p>
-                            <div class="pt-2 flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Spaghetti Bolognese</span>
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Nasi Goreng Special</span>
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Rice Bowl</span>
-                            </div>
-                        </div>
+                    <span class="text-xs font-bold tracking-wider text-brand-maroon uppercase">For Students</span>
+                    <h3 class="font-serif text-2xl font-bold text-brand-maroon mt-1 mb-3">Mahasiswa & Pelajar</h3>
+                    <p class="text-brand-softText text-sm leading-relaxed">
+                        Cari <span class="font-semibold text-brand-darkText">spot nyaman buat nugas</span> dengan Wi-Fi kencang, ditemani camilan lezat dan kopi hemat mulai Rp 20 ribuan.
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-brand-maroon/10 flex items-center text-xs font-semibold text-brand-maroon">
+                        <span>Fasilitas: Wi-Fi, Stopkontak, Ambience Tenang</span>
                     </div>
-
-                    <!-- Sweet Desserts -->
-                    <div
-                        class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-depresso-green/10 flex items-start gap-5 hover:border-depresso-green/40 transition-all">
-                        <div
-                            class="w-14 h-14 rounded-full bg-depresso-cream text-depresso-green flex items-center justify-center text-2xl shrink-0 shadow-inner">
-                            <i class="fa-solid fa-cake-candles"></i>
-                        </div>
-                        <div class="space-y-2">
-                            <h3 class="font-serif text-xl font-bold text-depresso-green tracking-wide uppercase">
-                                SWEET DESSERTS
-                            </h3>
-                            <p class="text-sm text-depresso-text/80 leading-relaxed">
-                                Aneka camilan dan dessert manis sebagai penutup sempurna momen santaimu di Depresso
-                                Cafe.
-                            </p>
-                            <div class="pt-2 flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Tiramisu Slice</span>
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Matcha Cake</span>
-                                <span class="px-3 py-1 bg-depresso-cream text-depresso-green text-xs font-semibold rounded-full">Croffle</span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <!-- Right Side Highlight Box: "Mewah di Rasa, Ramah di Kantong" (5 Cols) -->
-                <div id="keunggulan"
-                    class="lg:col-span-5 bg-depresso-cream-dark rounded-3xl p-8 sm:p-10 border-2 border-depresso-green/20 flex flex-col justify-between relative overflow-hidden shadow-md">
-                    <!-- Leaf background Accent -->
-                    <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
-                        <i class="fa-solid fa-leaf text-[200px] text-depresso-green"></i>
+                <!-- Card 2: Karyawan -->
+                <div class="bg-white rounded-3xl p-8 border border-brand-maroon/10 shadow-lg hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-maroon group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-briefcase"></i>
                     </div>
-
-                    <div class="space-y-6 relative z-10">
-                        <div class="flex items-center justify-between">
-                            <h3 class="font-serif text-2xl font-bold text-depresso-green uppercase tracking-wide">
-                                MEWAH DI RASA,<br>RAMAH DI KANTONG.
-                            </h3>
-                            <span class="text-2xl">🍃</span>
-                        </div>
-
-                        <div class="w-16 h-1 bg-depresso-green rounded-full"></div>
-
-                        <p class="text-sm sm:text-base text-depresso-text/90 leading-relaxed">
-                            Kami percaya bahwa makanan lezat dan tempat yang nyaman tidak harus mahal.
-                        </p>
-
-                        <p class="text-sm sm:text-base text-depresso-text/90 leading-relaxed">
-                            Di <b>Depresso Cafe</b>, Anda bisa menikmati seluruh variasi produk berkualitas tinggi—mulai
-                            dari kopi, makanan berat, hingga dessert—dengan kisaran harga terjangkau mulai dari
-                            <span class="font-bold text-depresso-green">Rp20.000 saja!</span>
-                        </p>
-
-                        <!-- Highlights List -->
-                        <div class="space-y-3 pt-2">
-                            <div class="flex items-center gap-3 text-sm text-depresso-green font-semibold">
-                                <i class="fa-solid fa-circle-check text-depresso-accent text-lg"></i>
-                                <span>Bahan Kopi & Makanan Fresh Setiap Hari</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-sm text-depresso-green font-semibold">
-                                <i class="fa-solid fa-circle-check text-depresso-accent text-lg"></i>
-                                <span>Porsi Pas & Mengenyangkan</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-sm text-depresso-green font-semibold">
-                                <i class="fa-solid fa-circle-check text-depresso-accent text-lg"></i>
-                                <span>Harga Terjangkau Untuk Semua Kalangan</span>
-                            </div>
-                        </div>
+                    <span class="text-xs font-bold tracking-wider text-brand-maroon uppercase">For Professionals</span>
+                    <h3 class="font-serif text-2xl font-bold text-brand-maroon mt-1 mb-3">Karyawan & Pekerja</h3>
+                    <p class="text-brand-softText text-sm leading-relaxed">
+                        Rehat sejenak dari penatnya kerjaan sambil <span class="font-semibold text-brand-darkText">coffee break</span> atau tempat meeting santai bareng rekan kantor.
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-brand-maroon/10 flex items-center text-xs font-semibold text-brand-maroon">
+                        <span>Fasilitas: Artisan Coffee, Fresh Pastry, AC Sejuk</span>
                     </div>
+                </div>
 
-                    <!-- Bottom Action inside box -->
-                    <div class="pt-8 relative z-10">
-                        <button onclick="openMenuModal()" class="w-full py-3.5 rounded-xl bg-depresso-green text-white font-bold text-sm tracking-wider uppercase hover:bg-depresso-green-light shadow-md transition-all text-center flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-book-open"></i> Buka Buku Menu Lengkap
-                        </button>
+                <!-- Card 3: Ibu-Ibu Arisan & Keluarga -->
+                <div class="bg-white rounded-3xl p-8 border border-brand-maroon/10 shadow-lg hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-maroon group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-users"></i>
                     </div>
-
+                    <span class="text-xs font-bold tracking-wider text-brand-maroon uppercase">For Community & Family</span>
+                    <h3 class="font-serif text-2xl font-bold text-brand-maroon mt-1 mb-3">Ibu Arisan & Keluarga</h3>
+                    <p class="text-brand-softText text-sm leading-relaxed">
+                        Momen kumpul seru dengan sajian <span class="font-semibold text-brand-darkText">dessert cantik & sourdough</span> berkualitras yang disukai semua umur.
+                    </p>
+                    <div class="mt-6 pt-4 border-t border-brand-maroon/10 flex items-center text-xs font-semibold text-brand-maroon">
+                        <span>Fasilitas: Area Estetik, Varian Cake Lengkap</span>
+                    </div>
                 </div>
 
             </div>
-
-            <!-- Food Display Gallery Row -->
-            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="rounded-2xl overflow-hidden shadow-sm h-40 group relative">
-                    <img src="Foto 1.jpeg" alt="Iced Drinks" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=500&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
-                        <span class="text-white text-xs font-bold font-serif">Iced Matcha & Coffee</span>
-                    </div>
-                </div>
-
-                <div class="rounded-2xl overflow-hidden shadow-sm h-40 group relative">
-                    <img src="Foto 1.jpeg" alt="Pasta Dish" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1621996346565-e3d5d6281318?auto=format&fit=crop&w=500&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
-                        <span class="text-white text-xs font-bold font-serif">Signature Pasta</span>
-                    </div>
-                </div>
-
-                <div class="rounded-2xl overflow-hidden shadow-sm h-40 group relative">
-                    <img src="Foto 1.jpeg" alt="Desserts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=500&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
-                        <span class="text-white text-xs font-bold font-serif">Slice Cakes</span>
-                    </div>
-                </div>
-
-                <div class="rounded-2xl overflow-hidden shadow-sm h-40 group relative">
-                    <img src="Foto 1.jpeg" alt="Hot Cappuccino" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=500&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
-                        <span class="text-white text-xs font-bold font-serif">Artisan Cappuccino</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section class="py-16 bg-depresso-cream-dark/30 border-y border-depresso-green/10">
+    <!-- Desire Section (DESIRE - Menu Showcase) -->
+    <section id="menu" class="py-16 sm:py-24 bg-white border-y border-brand-maroon/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="space-y-3 max-w-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-maroon bg-brand-creamCard px-4 py-1.5 rounded-full border border-brand-maroon/10">
+                        Pilihan Terfavorit
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-maroon">
+                        Menu Favorit Lengkap, Mulai Dari Rp20.000 Aja!
+                    </h2>
+                    <p class="text-brand-softText text-base">
+                        Setiap sajian dibuat dari bahan pilihan, higienis, dan dipanggang segar setiap harinya.
+                    </p>
+                </div>
+
+                <div class="mt-6 md:mt-0">
+                    <a href="https://wa.me/6281297250634?text=Halo" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Lead');"
+                       class="inline-flex items-center space-x-2 text-brand-maroon font-bold hover:underline">
+                        <span>Minta Pricelist Lengkap via WA</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Menu Card 1: Freshly Baked Bakery -->
+                <div class="bg-brand-creamBg rounded-3xl overflow-hidden border border-brand-maroon/15 shadow-md hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" 
+                             alt="Freshly Baked Bakery" 
+                             class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-brand-maroon text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Best Seller 🥐
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md text-brand-maroon text-sm font-extrabold px-3 py-1 rounded-full border border-brand-maroon/20">
+                            Mulai Rp 20.000
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-2xl font-bold text-brand-maroon">🥐 Freshly Baked Bakery</h3>
+                        <p class="text-brand-softText text-sm leading-relaxed">
+                            Pastry renyah & lembut yang dipanggang segar setiap hari. Nikmati Salt Bread signature, Croissant butter pilihan, hingga Sourdough sehat.
+                        </p>
+                        <ul class="text-xs text-brand-darkText font-medium space-y-1 pt-2 border-t border-brand-maroon/10">
+                            <li>✓ Signature Butter Salt Bread</li>
+                            <li>✓ Chocolate & Almond Croissant</li>
+                            <li>✓ Fresh Sourdough Loaf</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Menu Card 2: Signature Desserts -->
+                <div class="bg-brand-creamBg rounded-3xl overflow-hidden border border-brand-maroon/15 shadow-md hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?q=80&w=800&auto=format&fit=crop" 
+                             alt="Signature Desserts & Cakes" 
+                             class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-brand-maroon text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Favorite 🍰
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md text-brand-maroon text-sm font-extrabold px-3 py-1 rounded-full border border-brand-maroon/20">
+                            Mulai Rp 25.000
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-2xl font-bold text-brand-maroon">🍰 Signature Desserts</h3>
+                        <p class="text-brand-softText text-sm leading-relaxed">
+                            Aneka cake cantik dan sajian manis yang siap manjakan lidahmu. Cocok untuk perayaan ulang tahun, kumpul arisan, atau reward manis diri sendiri.
+                        </p>
+                        <ul class="text-xs text-brand-darkText font-medium space-y-1 pt-2 border-t border-brand-maroon/10">
+                            <li>✓ Strawberry Cheesecake Slice</li>
+                            <li>✓ Soft Cookies Lotus & Chocolate</li>
+                            <li>✓ Custom Birthday Cake</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Menu Card 3: Artisan Coffee & Drinks -->
+                <div class="bg-brand-creamBg rounded-3xl overflow-hidden border border-brand-maroon/15 shadow-md hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=800&auto=format&fit=crop" 
+                             alt="Artisan Coffee & Drinks" 
+                             class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-brand-maroon text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                            Must Try ☕
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md text-brand-maroon text-sm font-extrabold px-3 py-1 rounded-full border border-brand-maroon/20">
+                            Mulai Rp 20.000
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-2xl font-bold text-brand-maroon">☕ Artisan Coffee & Drinks</h3>
+                        <p class="text-brand-softText text-sm leading-relaxed">
+                            Kopi pilihan dari biji kopi lokal terbaik dan minuman segar penyemangat harimu. Pas dipadukan dengan varian bakery kesukaanmu.
+                        </p>
+                        <ul class="text-xs text-brand-darkText font-medium space-y-1 pt-2 border-t border-brand-maroon/10">
+                            <li>✓ Es Kopi Susu La Tasya</li>
+                            <li>✓ Creamy Matcha Latte</li>
+                            <li>✓ Refreshing Fruit Mocktails</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Testimonials -->
+    <section id="testimoni" class="py-16 sm:py-24 bg-brand-creamBg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
-                <span class="text-xs font-bold tracking-widest text-depresso-gold uppercase flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-instagram text-base"></i> @deps.cafe
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-maroon bg-brand-creamCard px-4 py-1 rounded-full border border-brand-maroon/10">
+                    Kata Mereka
                 </span>
-                <h3 class="font-serif text-3xl font-bold text-depresso-green">
-                    Kata Mereka Tentang Depresso Cafe
-                </h3>
-                <p class="text-sm text-depresso-text/80">
-                    Momen manis, WFC produktif, dan kebersamaan hangat yang terabadikan di Depresso.
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-maroon">
+                    Ulasan Pengunjung La Tasya
+                </h2>
+                <p class="text-brand-softText text-sm">
+                    Dengarkan cerita jujur dari pelanggan setia kami di Cilegon
                 </p>
             </div>
 
-            <!-- Testimonials Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
                 <!-- Testimonial 1 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-depresso-green/10 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex text-depresso-gold text-sm gap-1">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="bg-white p-6 rounded-2xl border border-brand-maroon/10 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-xs text-depresso-text/90 italic leading-relaxed">
-                            "Tempat favorit buat nugas akhir pekan! Colokan ada di mana-mana, Wi-Fi kenceng banget, dan harga latihannya ramah kantong mahasiswa."
+                        <p class="text-brand-darkText text-sm italic leading-relaxed">
+                            "Tempatnya adem, beneran ramah di kantong! Kopi sama croissant-nya favorit banget buat nemenin kerja laptopan."
                         </p>
                     </div>
-                    <div class="flex items-center gap-3 pt-2 border-t border-depresso-green/10">
-                        <div class="w-9 h-9 rounded-full bg-depresso-green text-white flex items-center justify-center font-bold text-xs">
-                            S
-                        </div>
+                    <div class="mt-6 pt-4 border-t border-brand-maroon/10 flex items-center justify-between">
                         <div>
-                            <h4 class="text-xs font-bold text-depresso-green">Siti Rahmawati</h4>
-                            <p class="text-[10px] text-depresso-text/60">Mahasiswa & Freelancer</p>
+                            <p class="font-bold text-sm text-brand-maroon">Rian</p>
+                            <p class="text-xs text-brand-softText">Karyawan Swasta</p>
                         </div>
+                        <span class="text-xs text-brand-maroon/60 bg-brand-creamBg px-2 py-1 rounded">Verified Review</span>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-depresso-green/10 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex text-depresso-gold text-sm gap-1">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="bg-white p-6 rounded-2xl border border-brand-maroon/10 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-xs text-depresso-text/90 italic leading-relaxed">
-                            "Sering bawa klien ke sini buat meeting santai. Suasananya tenang, pilihan makanannya lengkap dari nasi goreng sampai pasta, plus kopi espresso-nya mantap!"
+                        <p class="text-brand-darkText text-sm italic leading-relaxed">
+                            "Salt bread-nya crunchy di luar tapi moist banget di dalam. Tempatnya estetik parah buat foto-foto bareng temen!"
                         </p>
                     </div>
-                    <div class="flex items-center gap-3 pt-2 border-t border-depresso-green/10">
-                        <div class="w-9 h-9 rounded-full bg-depresso-green text-white flex items-center justify-center font-bold text-xs">
-                            A
-                        </div>
+                    <div class="mt-6 pt-4 border-t border-brand-maroon/10 flex items-center justify-between">
                         <div>
-                            <h4 class="text-xs font-bold text-depresso-green">Aditya Pratama</h4>
-                            <p class="text-[10px] text-depresso-text/60">Digital Marketer</p>
+                            <p class="font-bold text-sm text-brand-maroon">Siska Maharani</p>
+                            <p class="text-xs text-brand-softText">Mahasiswi</p>
                         </div>
+                        <span class="text-xs text-brand-maroon/60 bg-brand-creamBg px-2 py-1 rounded">Verified Review</span>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-depresso-green/10 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex text-depresso-gold text-sm gap-1">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="bg-white p-6 rounded-2xl border border-brand-maroon/10 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-xs text-depresso-text/90 italic leading-relaxed">
-                            "Tempatnya estetik dan warm banget buat arisan ibu-ibu! Desserts croffle dan tiramisu-nya juara. Pasti bakal sering datang kembali."
+                        <p class="text-brand-darkText text-sm italic leading-relaxed">
+                            "Sering banget arisan bulanan di sini. Pilihan cake-nya cantik-cantik dan rasanya gak oversweet. Pelayanannya ramah banget!"
                         </p>
                     </div>
-                    <div class="flex items-center gap-3 pt-2 border-t border-depresso-green/10">
-                        <div class="w-9 h-9 rounded-full bg-depresso-green text-white flex items-center justify-center font-bold text-xs">
-                            D
-                        </div>
+                    <div class="mt-6 pt-4 border-t border-brand-maroon/10 flex items-center justify-between">
                         <div>
-                            <h4 class="text-xs font-bold text-depresso-green">Dian Permata</h4>
-                            <p class="text-[10px] text-depresso-text/60">Komunitas Arisan Grogol</p>
+                            <p class="font-bold text-sm text-brand-maroon">Ibu Dewi</p>
+                            <p class="text-xs text-brand-softText">Pelanggan Setia</p>
                         </div>
+                        <span class="text-xs text-brand-maroon/60 bg-brand-creamBg px-2 py-1 rounded">Verified Review</span>
                     </div>
                 </div>
-
-            </div>
-
-            <!-- Instagram Callout Banner -->
-            <div class="mt-10 text-center">
-                <a href="https://www.instagram.com/deps.cafe" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-depresso-green bg-white px-6 py-3 rounded-full shadow-sm hover:shadow-md transition-all border border-depresso-green/20">
-                    <i class="fa-brands fa-instagram text-lg text-depresso-gold"></i>
-                    <span>Ikuti Momen Terbaru Kami di @deps.cafe</span>
-                </a>
             </div>
         </div>
     </section>
 
-    <section id="fasilitas" class="py-12 bg-depresso-green text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
+    <!-- Action CTA Banner Section (ACTION) -->
+    <section class="py-16 bg-brand-maroon text-white relative overflow-hidden">
+        <!-- Pattern background accent -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
-                <!-- Facility 1 -->
-                <div class="pt-4 md:pt-0 flex flex-col items-center space-y-3 px-4">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-3xl text-depresso-cream mb-1">
-                        <i class="fa-solid fa-wifi"></i>
-                    </div>
-                    <h4 class="font-serif text-lg font-bold">Wi-Fi Cepat & Stabil</h4>
-                    <p class="text-xs text-white/80 max-w-xs">Koneksi tinggi untuk kebutuhan nugas, kerja remote,
-                        streaming, dan video call tanpa buffering.</p>
-                </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+            <span class="font-script text-3xl sm:text-4xl text-amber-200 block">
+                Momen Istimewa Menantimu ♡
+            </span>
 
-                <!-- Facility 2 -->
-                <div class="pt-6 md:pt-0 flex flex-col items-center space-y-3 px-4">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-3xl text-depresso-cream mb-1">
-                        <i class="fa-solid fa-plug"></i>
-                    </div>
-                    <h4 class="font-serif text-lg font-bold">Banyak Colokan Tersedia</h4>
-                    <p class="text-xs text-white/80 max-w-xs">Stopkontak hampir di setiap sudut meja. Tidak perlu
-                        khawatir kehabisan daya laptop atau gadget-mu.</p>
-                </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-extrabold leading-tight">
+                Siap Buat Momen Nongkrongmu Lebih Manis?
+            </h2>
 
-                <!-- Facility 3 -->
-                <div class="pt-6 md:pt-0 flex flex-col items-center space-y-3 px-4">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-3xl text-depresso-cream mb-1">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <h4 class="font-serif text-lg font-bold">Nyaman untuk WFC & Nongkrong</h4>
-                    <p class="text-xs text-white/80 max-w-xs">Kursi ergonomis, pencahayaan hangat, dan pendingin ruangan
-                        yang sejuk bikin betah berjam-jam.</p>
-                </div>
+            <p class="text-base sm:text-lg text-amber-100/90 max-w-2xl mx-auto font-light">
+                Kunjungi outlet La Tasya Bakehouse terdekat atau pesan langsung sekarang via WhatsApp!
+            </p>
 
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 md:py-24 bg-depresso-cream relative overflow-hidden">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-
-            <div class="space-y-4">
-                <div class="inline-flex items-center gap-2">
-                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-depresso-green">
-                        Tunggu Apa Lagi? Mampir ke Depresso Cafe Hari Ini!
-                    </h2>
-                    <span class="text-3xl">♡</span>
-                </div>
-                <p class="text-base sm:text-lg text-depresso-text/90 max-w-2xl mx-auto">
-                    Ajak teman, rekan kerja, atau keluargamu untuk menikmati suasana nyaman dan hidangan favoritmu
-                    sekarang juga.
-                </p>
-            </div>
-
-            <!-- Primary CTAs -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-
-                <!-- Direct WA Link Button -->
-                <a href="https://wa.me/+6289616333201?text=Halo+Saya+Tertarik+Untuk+Reservasi" target="_blank" onclick="fbq('track', 'Lead');"
-                    class="w-full sm:w-auto px-8 py-4 rounded-xl bg-depresso-green text-white font-bold text-sm tracking-wider uppercase hover:bg-depresso-green-light shadow-xl hover:shadow-2xl transition-all flex items-center justify-center gap-3">
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/6281297250634?text=Halo" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Lead');"
+                   class="w-full sm:w-auto bg-amber-400 hover:bg-amber-300 text-brand-maroonDark px-8 py-4 rounded-full font-extrabold text-base transition-all duration-300 shadow-xl transform hover:-translate-y-1 flex items-center justify-center space-x-3">
                     <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    <span>RESERVASI MEJA VIA WHATSAPP</span>
+                    <span>Pesan Lewat WhatsApp / Online</span>
                 </a>
 
-                <!-- Google Maps Link -->
-                <a href="https://maps.google.com" target="_blank"
-                    class="w-full sm:w-auto px-8 py-4 rounded-xl border-2 border-depresso-green text-depresso-green font-bold text-sm tracking-wider uppercase hover:bg-depresso-cream-dark transition-all flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-location-dot text-xl"></i>
-                    <span>PETUNJUK ARAH (GOOGLE MAPS)</span>
+                <a href="#lokasi" 
+                   class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-base transition-all duration-300 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Cek Lokasi Outlet</span>
                 </a>
-
             </div>
-
-            <!-- Custom Interactive Reservation Helper Modal Trigger -->
-            <div class="pt-2">
-                <button onclick="openReservationModal()" class="text-xs text-depresso-accent font-semibold underline hover:text-depresso-green transition-colors">
-                    Atau Klik Disini Untuk Buat Rincian Jadwal Reservasi Meja Fast-Track
-                </button>
-            </div>
-
         </div>
     </section>
 
-
-    <footer id="lokasi" class="bg-depresso-green-dark text-white pt-16 pb-12 border-t border-white/10">
+    <!-- Location & Footer Section -->
+    <footer id="lokasi" class="bg-brand-creamCard text-brand-darkText border-t border-brand-maroon/15 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-white/10">
-
-                <!-- Brand Info -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-brand-maroon/10">
+                
+                <!-- Column 1: Brand Info -->
                 <div class="md:col-span-5 space-y-4">
-                    <div class="flex flex-col items-start gap-1">
-                        <!-- DEPRESSO SVG Logo White Version -->
-                        <svg class="h-9 w-auto" viewBox="0 0 320 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 10H45C68 10 82 23 82 35C82 47 68 60 45 60H15V10Z" fill="#ffffff" />
-                            <path d="M30 24H52C52 24 53 43 41 43C29 43 30 24 30 24Z" fill="#14271c" />
-                            <path d="M22 28C18 28 16 31 16 34C16 38 19 40 24 40" stroke="#c59d40" stroke-width="4"
-                                stroke-linecap="round" fill="none" />
-                            <ellipse cx="41" cy="33" rx="5" ry="7" transform="rotate(-20 41 33)" fill="#ffffff" />
-                            <path d="M39 27Q42 33 41 39" stroke="#14271c" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M36 17Q38 14 36 11" stroke="#c59d40" stroke-width="2" stroke-linecap="round" />
-                            <path d="M42 17Q44 14 42 11" stroke="#c59d40" stroke-width="2" stroke-linecap="round" />
-                            <path d="M48 17Q50 14 48 11" stroke="#c59d40" stroke-width="2" stroke-linecap="round" />
-                            <text x="92" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800"
-                                font-size="42" fill="#ffffff" letter-spacing="3">EPRESSO</text>
-                        </svg>
-                        <span class="text-sm font-semibold text-depresso-gold flex items-center gap-1.5 mt-1">
-                            <i class="fa-brands fa-instagram text-base"></i> @dep’s.cafe
+                    <a href="#" class="inline-block">
+                        <span class="font-serif text-2xl font-bold tracking-widest text-brand-maroon block">
+                            LÀ TASYA
                         </span>
-                    </div>
-                    <p class="text-sm text-white/70 max-w-sm leading-relaxed">
-                        Tempat nongkrong estetik dan cozy di pusat kota dengan hidangan lengkap dari kopi specialty
-                        hingga dessert lezat.
+                        <span class="text-[10px] tracking-[0.3em] font-semibold text-brand-maroon/80 uppercase block">
+                            BAKEHOUSE
+                        </span>
+                    </a>
+                    <p class="text-xs sm:text-sm text-brand-softText leading-relaxed pr-4">
+                        Tempat nongkrong estetik dengan kelezatan freshly baked bakery, sourdough, dessert cantik, dan kopi kekinian di Cilegon, Banten.
                     </p>
-                    <p class="handwritten text-3xl text-depresso-cream pt-2">
-                        Good Coffee, Good Food, Good Mood. ♡
-                    </p>
-                </div>
-
-                <!-- Hours & Location -->
-                <div class="md:col-span-4 space-y-3">
-                    <h4 class="font-serif text-lg font-bold text-depresso-cream">Jam Operasional & Lokasi</h4>
-                    <p class="text-sm text-white/80 flex items-start gap-3">
-                        <i class="fa-solid fa-clock mt-1 text-depresso-gold"></i>
-                        <span>Senin - Minggu: 10.00 - 23.00 WIB</span>
-                    </p>
-                    <p class="text-sm text-white/80 flex items-start gap-3">
-                        <i class="fa-solid fa-map-pin mt-1 text-depresso-gold"></i>
-                        <span>Depresso Grogol</span>
-                    </p>
-                    <p class="text-sm text-white/80 flex items-start gap-3">
-                        <i class="fa-solid fa-phone mt-1 text-depresso-gold"></i>
-                        <span>+6289616333201</span>
-                    </p>
-                </div>
-
-                <!-- Social Media -->
-                <div class="md:col-span-3 space-y-4">
-                    <h4 class="font-serif text-lg font-bold text-depresso-cream">Follow Us</h4>
-                    <div class="space-y-3">
-                        <a href="https://instagram.com" target="_blank"
-                            class="flex items-center gap-3 text-sm text-white/80 hover:text-white transition-colors">
-                            <i class="fa-brands fa-instagram text-xl text-depresso-gold"></i>
-                            <span>@dep’s.cafe</span>
+                    <div class="flex items-center space-x-4 pt-2">
+                        <a href="https://www.instagram.com/latasya.bakehouse" target="_blank" rel="noopener noreferrer" 
+                           class="w-10 h-10 rounded-full bg-brand-maroon text-white flex items-center justify-center hover:bg-brand-maroonDark transition-colors shadow-sm"
+                           title="Instagram @latasya.bakehouse">
+                            <i class="fa-brands fa-instagram text-lg"></i>
                         </a>
-                        <p class="text-xs text-white/70 italic flex items-center gap-2 pt-1">
-                            <i class="fa-regular fa-comment-dots text-depresso-gold"></i>
-                            <span>More Info Please DM us!</span>
-                        </p>
+                        <a href="https://wa.me/6281297250634?text=Halo" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Lead');"
+                           class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-700 transition-colors shadow-sm"
+                           title="WhatsApp Customer Service">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Location Detail (Visit Us) -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="font-serif font-bold text-brand-maroon text-lg flex items-center space-x-2">
+                        <i class="fa-solid fa-location-dot text-brand-maroon"></i>
+                        <span>Visit Us</span>
+                    </h4>
+                    <div class="text-sm text-brand-softText space-y-2">
+                        <p class="font-semibold text-brand-darkText">La Tasya Bakehouse Outlet</p>
+                        <p>Cilegon, Banten, Indonesia</p>
+                        <p class="text-xs text-brand-maroon font-medium">📍 Tempat Nyaman, Parkir Luas & Strategis</p>
+                    </div>
+                </div>
+
+                <!-- Column 3: Hours & Contact -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="font-serif font-bold text-brand-maroon text-lg flex items-center space-x-2">
+                        <i class="fa-regular fa-clock text-brand-maroon"></i>
+                        <span>Jam Operasional</span>
+                    </h4>
+                    <div class="text-xs text-brand-softText space-y-1">
+                        <p><strong class="text-brand-darkText">Setiap Hari:</strong> 08.00 - 22.00 WIB</p>
+                        <p class="pt-2 text-emerald-700 font-semibold">● Open Daily for Dine-in & Takeaway</p>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Bottom Copyright & Tagline -->
-            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-white/50 gap-4">
-                <p>&copy; 2026 Depresso Cafe. All rights reserved.</p>
-                <div class="flex items-center gap-6">
-                    <a href="#" class="hover:underline">Kebijakan Privasi</a>
-                    <a href="#" class="hover:underline">Syarat & Ketentuan</a>
-                </div>
+            <!-- Bottom Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-softText">
+                <p>© 2026 La Tasya Bakehouse. All rights reserved.</p>
+                <p class="font-script text-base text-brand-maroon mt-2 sm:mt-0">Made with love & fresh ingredients ♡</p>
             </div>
         </div>
     </footer>
 
-    <div id="menu-modal"
-        class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div
-            class="bg-depresso-cream rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col border border-depresso-green/20">
+    <!-- Floating WhatsApp CTA Button for Easy Access -->
+    <a href="https://wa.me/6281297250634?text=Halo" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Lead');"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 border-2 border-white group"
+       aria-label="Chat WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out text-xs font-bold pl-0 group-hover:pl-2">
+            Pesan Sekarang
+        </span>
+    </a>
 
-            <!-- Modal Header -->
-            <div class="p-6 bg-depresso-green text-white flex items-center justify-between">
-                <div>
-                    <h3 class="font-serif text-2xl font-bold">Buku Menu Depresso Cafe</h3>
-                    <p class="text-xs text-white/80">Pilihan menu lezat mulai dari Rp20.000!</p>
-                </div>
-                <button onclick="closeMenuModal()" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
-            </div>
-
-            <!-- Modal Content & Filter -->
-            <div class="p-6 overflow-y-auto space-y-6 flex-1">
-
-                <!-- Category Filter Buttons -->
-                <div class="flex flex-wrap gap-2 border-b border-depresso-green/10 pb-4">
-                    <button onclick="filterMenu('all')" class="menu-filter-btn px-4 py-2 rounded-full bg-depresso-green text-white text-xs font-bold active-filter">Semua Menu</button>
-                    <button onclick="filterMenu('coffee')" class="menu-filter-btn px-4 py-2 rounded-full bg-white text-depresso-green text-xs font-bold border border-depresso-green/20">Kopi & Drink</button>
-                    <button onclick="filterMenu('main')" class="menu-filter-btn px-4 py-2 rounded-full bg-white text-depresso-green text-xs font-bold border border-depresso-green/20">Makanan Berat</button>
-                    <button onclick="filterMenu('dessert')" class="menu-filter-btn px-4 py-2 rounded-full bg-white text-depresso-green text-xs font-bold border border-depresso-green/20">Dessert & Snack</button>
-                </div>
-
-                <!-- Menu Items Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="menu-items-container">
-
-                    <!-- Item 1 -->
-                    <div
-                        class="menu-item coffee bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Americano / Long Black</h4>
-                            <p class="text-xs text-depresso-text/70">Kopi hitam racikan biji kopi murni</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp20.000</span>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div
-                        class="menu-item coffee bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Signature Depresso Latte</h4>
-                            <p class="text-xs text-depresso-text/70">Kopi susu creamy gula aren khas</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp24.000</span>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div
-                        class="menu-item coffee bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Matcha Green Tea Latte</h4>
-                            <p class="text-xs text-depresso-text/70">Matcha Jepang premium & susu segar</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp25.000</span>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div
-                        class="menu-item main bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Spaghetti Bolognese</h4>
-                            <p class="text-xs text-depresso-text/70">Pasta gurih dengan saus daging sapi</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp32.000</span>
-                    </div>
-
-                    <!-- Item 5 -->
-                    <div
-                        class="menu-item main bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Chicken Rice Bowl Sambal Matah</h4>
-                            <p class="text-xs text-depresso-text/70">Ayam crispy saus matah segar</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp28.000</span>
-                    </div>
-
-                    <!-- Item 6 -->
-                    <div
-                        class="menu-item dessert bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Classic Tiramisu Cake</h4>
-                            <p class="text-xs text-depresso-text/70">Cake lembut dengan sentuhan espresso</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp22.000</span>
-                    </div>
-
-                    <!-- Item 7 -->
-                    <div
-                        class="menu-item dessert bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Matcha Chiffon Slice</h4>
-                            <p class="text-xs text-depresso-text/70">Cake matcha lembut rendah gula</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp20.000</span>
-                    </div>
-
-                    <!-- Item 8 -->
-                    <div
-                        class="menu-item dessert bg-white p-4 rounded-xl border border-depresso-green/10 flex items-center justify-between">
-                        <div>
-                            <h4 class="font-serif font-bold text-depresso-green">Butter Croissant / Croffle</h4>
-                            <p class="text-xs text-depresso-text/70">Pastry renyah dengan topping maple</p>
-                        </div>
-                        <span class="font-bold text-sm text-depresso-green bg-depresso-cream px-3 py-1 rounded-full">Rp20.000</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Modal Footer -->
-            <div class="p-4 bg-depresso-cream-dark flex items-center justify-between border-t border-depresso-green/10">
-                <span class="text-xs text-depresso-text/70">Harga belum termasuk pajak standar</span>
-                <a href="https://wa.me/+6289616333201?text=Halo+Saya+Tertarik+Untuk+Reservasi" target="_blank" onclick="fbq('track', 'Lead');"
-                    class="px-5 py-2 rounded-full bg-depresso-green text-white font-bold text-xs">
-                    Pesan via WhatsApp
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-    <div id="reservation-modal"
-        class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-depresso-green/20">
-            <div class="p-6 bg-depresso-green text-white flex items-center justify-between">
-                <div>
-                    <h3 class="font-serif text-xl font-bold">Form Reservasi Meja Fast-Track</h3>
-                    <p class="text-xs text-white/80">Lengkapi data untuk terhubung langsung ke WhatsApp Depresso Cafe
-                    </p>
-                </div>
-                <button onclick="closeReservationModal()" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-
-            <form onsubmit="submitReservationForm(event)" class="p-6 space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-depresso-green mb-1">Nama Lengkap</label>
-                    <input type="text" id="res-name" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-2.5 rounded-xl border border-depresso-green/20 text-sm focus:outline-none focus:border-depresso-green">
-                </div>
-
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-depresso-green mb-1">Tanggal Kedatangan</label>
-                        <input type="date" id="res-date" required class="w-full px-4 py-2.5 rounded-xl border border-depresso-green/20 text-sm focus:outline-none focus:border-depresso-green">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-depresso-green mb-1">Jam Kedatangan</label>
-                        <input type="time" id="res-time" required class="w-full px-4 py-2.5 rounded-xl border border-depresso-green/20 text-sm focus:outline-none focus:border-depresso-green">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-depresso-green mb-1">Jumlah Orang</label>
-                    <select id="res-pax" class="w-full px-4 py-2.5 rounded-xl border border-depresso-green/20 text-sm focus:outline-none focus:border-depresso-green">
-                        <option value="1-2 Orang">1 - 2 Orang (Meja Personal/WFC)</option>
-                        <option value="3-4 Orang">3 - 4 Orang (Meja Hangout)</option>
-                        <option value="5+ Orang">5+ Orang (Group / Arisan / Gathering)</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-depresso-green mb-1">Catatan Khusus (Opsional)</label>
-                    <textarea id="res-note" placeholder="Contoh: Butuh area tenang dekat colokan listrik" class="w-full px-4 py-2.5 rounded-xl border border-depresso-green/20 text-sm focus:outline-none focus:border-depresso-green h-20 resize-none"></textarea>
-                </div>
-
-                <button type="submit" class="w-full py-3.5 rounded-xl bg-depresso-green text-white font-bold text-sm tracking-wider uppercase hover:bg-depresso-green-light transition-all flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-xl"></i>
-                    <span>Kirim Reservasi Ke WhatsApp</span>
-                </button>
-            </form>
-        </div>
-    </div>
-
+    <!-- Interactive Navbar Scroll Effect JS -->
     <script>
-        // Mobile Navigation Toggle
-        function toggleMobileNav() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const icon = document.getElementById('nav-toggle-icon');
-            if (mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.remove('hidden');
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
             } else {
-                mobileMenu.classList.add('hidden');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            }
-        }
-
-        // Menu Modal Controls
-        function openMenuModal() {
-            document.getElementById('menu-modal').classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeMenuModal() {
-            document.getElementById('menu-modal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Filter Menu Categories
-        function filterMenu(category) {
-            const items = document.querySelectorAll('.menu-item');
-            const filterBtns = document.querySelectorAll('.menu-filter-btn');
-
-            filterBtns.forEach(btn => {
-                btn.classList.remove('bg-depresso-green', 'text-white');
-                btn.classList.add('bg-white', 'text-depresso-green');
-            });
-
-            event.target.classList.remove('bg-white', 'text-depresso-green');
-            event.target.classList.add('bg-depresso-green', 'text-white');
-
-            items.forEach(item => {
-                if (category === 'all' || item.classList.contains(category)) {
-                    item.style.display = 'flex';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        // Fast-track Reservation Modal Controls
-        function openReservationModal() {
-            document.getElementById('reservation-modal').classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeReservationModal() {
-            document.getElementById('reservation-modal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Submit Reservation Form & Format WhatsApp Link
-        function submitReservationForm(event) {
-            event.preventDefault();
-            const name = document.getElementById('res-name').value;
-            const date = document.getElementById('res-date').value;
-            const time = document.getElementById('res-time').value;
-            const pax = document.getElementById('res-pax').value;
-            const note = document.getElementById('res-note').value;
-
-            if (typeof fbq === 'function') {
-                fbq('track', 'Lead');
-            }
-
-            let message = `Halo Depresso Cafe, saya tertarik untuk melakukan reservasi meja:%0A%0A`;
-            message += `*Nama:* ${encodeURIComponent(name)}%0A`;
-            message += `*Tanggal:* ${encodeURIComponent(date)}%0A`;
-            message += `*Jam:* ${encodeURIComponent(time)} WIB%0A`;
-            message += `*Jumlah:* ${encodeURIComponent(pax)}%0A`;
-            if (note) {
-                message += `*Catatan:* ${encodeURIComponent(note)}%0A`;
-            }
-            message += `%0AMohon konfirmasi ketersediaan meja. Terima kasih!`;
-
-            const waUrl = `https://wa.me/+6289616333201?text=${message}`;
-            window.open(waUrl, '_blank');
-            closeReservationModal();
-        }
-
-        // Set Default Date on Reservation Modal
-        window.addEventListener('DOMContentLoaded', () => {
-            const dateInput = document.getElementById('res-date');
-            if (dateInput) {
-                const today = new Date().toISOString().split('T')[0];
-                dateInput.value = today;
+                navbar.classList.remove('shadow-md');
             }
         });
     </script>
 </body>
-
 </html>
+```eof
+
+Sekarang Anda cukup menimpa isi file `index.html` lama Anda dengan kode di atas, semuanya sudah siap dan terpasang dengan rapi.
